@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS ANIMATION</title>
+<style>
+	body{
+		background-color: black;
+	}
+	div{
+	position: relative;
+	top:220px; 
+	left:350px;
+	}
+	div ul li
+	{
+		padding: 15px;
+		display: inline-block;
+		background-color: black;
+		color: white;
+		font-size:35px;
+		font-family:cursive,sans-serif;
+		font-weight: bolder;
+		width: 50px;
+		height: 50px;
+		border: 50%;
+		margin: 25px;
+		box-shadow: 0 -7px 20px white;
+		animation: bounce 1s infinite alternate;
+		text-align: center;
+		border-radius: 15px;
+	}
+	  ul li:nth-child(1)
+	  {
+	  	background-color: red;
+	  	animation-delay: 0.3s;
+	  }
+	   ul li:nth-child(2)
+	   {
+	  	background-color: green;
+	  	animation-delay: 0.2s;
+	  }
+	   ul li:nth-child(3)
+	   {
+	  	background-color:deeppink;
+	  	animation-delay: 0.7s;
+	  }
+	   ul li:nth-child(4)
+	   {
+	  	background-color:blue;
+	  	animation-delay: 0.4s;
+	  }
+	   ul li:nth-child(5)
+	   {
+	  	background-color:orange;
+	  	animation-delay: 0.1s;
+	  }
+		ul li:nth-child(6)
+	   {
+	  	background-color:violet;
+	  	animation-delay: 0.5s;
+	  }
+	@keyframes bounce{
+		0%{
+		transform: translateY(80px);
+	}
+		50%{
+		transform: translateY(-50px);
+	}
+		100%{
+		transform: translateY(100px);
+	}
+	ul{
+		border-bottom: 3px solid white;
+		width: 260px;
+	}
+
+
+	
+</style>
+</head>
+<body>
+    <div>
+    	<ul>
+    		<li>S</li>
+    		<li>M</li>
+    		<li>R</li>
+    		<li>U</li>
+    		<li>T</li>
+    		<li>I</li>
+    	</ul>
+    </div>
+</body>
+</html>
